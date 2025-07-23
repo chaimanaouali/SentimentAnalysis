@@ -42,4 +42,4 @@ def analyze_sentiment(req: TextListRequest):
 
 #!npm install -g localtunnel
 
-uvicorn SentimentAnalyses:app --host 0.0.0.0 --port 8000 --reload 
+#uvicorn SentimentAnalyses:app --host 0.0.0.0 --port 8000 --reload 
