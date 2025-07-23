@@ -7,9 +7,9 @@ Original file is located at
     https://colab.research.google.com/drive/1iIuTtolqu5fVOSsIMH0PQIhDkvqVp6IV
 """
 
-!npm install -g localtunnel
+#!npm install -g localtunnel
 
-!pip install fastapi uvicorn nest-asyncio pyngrok
+#!pip install fastapi uvicorn nest-asyncio pyngrok
 
 from fastapi import FastAPI
 from pydantic import BaseModel
@@ -40,7 +40,6 @@ def analyze_sentiment(req: TextListRequest):
         })
     return results
 
-!npm install -g localtunnel
+#!npm install -g localtunnel
 
-!uvicorn main:app --host 0.0.0.0 --port 8000 --reload &
-!lt --port 8000
+uvicorn SentimentAnalyses:app --host 0.0.0.0 --port 8000 --reload 
